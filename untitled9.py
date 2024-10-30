@@ -205,11 +205,11 @@ joblib.dump(model,'model.joblib')
 model.save_pretrained("model-out")
 tokenizer.save_pretrained("token-out")
 
-!pip install joblib
+pip install joblib
 
 downsized_llama_model.push_to_hub_merged("kharshita590/llama-model-fine-less", tokenizer, save_method="merged_16bit")
 
-!pip install --upgrade peft
+pip install --upgrade peft
 
 FastLanguageModel.for_inference(model)
 
@@ -261,16 +261,16 @@ test_profile = {'Problem_Solving_Approach': 'Logical, step-by-step', 'Comfort_wi
 
 print(generate_career_recommendation(test_profile))
 
-!pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
-!pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
-!pip install peft
-!pip install bitsandbytes
-!pip install xformers
-!pip install trl
-!pip install unsloth
+pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
+pip install peft
+pip install bitsandbytes
+pip install xformers
+pip install trl
+pip install unsloth
 
-!pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
-!pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
+pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+pip install --no-deps "xformers<0.0.27" "trl<0.9.0" peft accelerate bitsandbytes
 
 from huggingface_hub import login
 access_token = "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"
@@ -306,5 +306,5 @@ model.push_to_hub_merged("kharshita590/llama-model-fine-less", tokenizer, save_m
 
 pip install --upgrade transformers bitsandbytes
 
-!pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-!pip install --upgrade transformers bitsandbytes
+pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install --upgrade transformers bitsandbytes
